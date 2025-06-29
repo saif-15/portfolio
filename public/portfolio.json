@@ -1,0 +1,29 @@
+{
+    "header" : {
+        "linkedinLink" : "https://www.linkedin.com/in/saif-ul-haq-063a0a193/",
+        "facebookLink" : "https://www.facebook.com/shady.saif15",
+        "emailLink" : "mailto:saifulhaq.15@outlook.com"
+    },
+    "body" :{
+        "hero":{
+            "profession" : [
+                    "Software Engineer",
+                    "Devops Engineer",
+                    "Cloud Engineer"
+            ],
+            "headlines" : [
+                "</LoveToCode>",
+                "My-name-is-Saif.yaml",
+                "Problem-solver.py",
+                "Guy-who-like-coffee.java",
+                "Root-access-granted.sh",
+                "Commit-the-dream.git"
+
+            ]
+        },
+        "about" : {
+            "img-url" : "https://media.licdn.com/dms/image/v2/D4D03AQEUaeE5Ds_1mw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1691240623556?e=1755734400&v=beta&t=Xm5vj36zxpgfEcj02R2Ulm5JoK26IIk3N4inTcHI13k",
+            "description" : "lorem epsonce hjhsjahjhsah"
+        }
+    }
+}
