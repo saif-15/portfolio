@@ -6,24 +6,68 @@
     },
     "body" :{
         "hero":{
+            "image" : "https://portfolio-tech-icons.s3.us-east-1.amazonaws.com/profile-1.png",
             "profession" : [
                     "Software Engineer",
-                    "Devops Engineer",
-                    "Cloud Engineer"
+                    "Devops Aspirant",
+                    "Cloud Enthusiast"
             ],
             "headlines" : [
                 "</LoveToCode>",
-                "My-name-is-Saif.yaml",
-                "Problem-solver.py",
-                "Guy-who-like-coffee.java",
-                "Root-access-granted.sh",
-                "Commit-the-dream.git"
+                "my-name-is-Saif.yaml",
+                "problem-solver.py",
+                "guy-who-like-coffee.java",
+                "root-access-granted.sh",
+                "commit-the-dream.git"
 
             ]
         },
         "about" : {
             "img-url" : "https://media.licdn.com/dms/image/v2/D4D03AQEUaeE5Ds_1mw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1691240623556?e=1755734400&v=beta&t=Xm5vj36zxpgfEcj02R2Ulm5JoK26IIk3N4inTcHI13k",
-            "description" : "lorem epsonce hjhsjahjhsah"
+            "description" : "Skilled in Java, JavaScript, DSA and web development with a Bachelor of Computer Science from Umaer Basha Institute of Technology (UBIT) and currently persuing Masters in Data Science from National University of Computing and Emerging Sciences (FAST). I am a motivated engineer utilizing Java and Spring Boot to built a customer friendly solutions with the goal of establishing myself in the technical field.I've always had a creative streak, therefore I'm looking forward to use technical expertise to create with the realm of currently existing technologies.According to me, Software engineering is a fascinating blend of creativity and logic, where we craft solutions that shape the digital world"
+        },
+        "experience":{
+            "list" : [
+                {
+                    "img-url" : "https://media.licdn.com/dms/image/v2/C4D0BAQFVK71jsqTAeQ/company-logo_200_200/company-logo_200_200/0/1673575492245?e=1756339200&v=beta&t=5Z5hhkHhlk3jWlmcPBBC2sV3BGuhzb2bNp3dwQdyprw",
+                    "position" : "Manager - SWE",
+                    "company" : "Utopia Deals",
+                    "duration" : "Jan 2025 - till Date",
+                    "skills" : [],
+                    "points" : [
+                        "Developed scalable backend APIs with Spring Boot.",
+                        "Deployed microservices on AWS cloud environment.",
+                        "Collaborated with cross-functional teams and stakeholders.",
+                        "Led development of real-time analytics dashboards."
+                    ]
+                },
+                {
+                    "img-url" : "https://media.licdn.com/dms/image/v2/C4D0BAQFVK71jsqTAeQ/company-logo_200_200/company-logo_200_200/0/1673575492245?e=1756339200&v=beta&t=5Z5hhkHhlk3jWlmcPBBC2sV3BGuhzb2bNp3dwQdyprw",
+                    "position" : "Deputy Manager - SWE",
+                    "company" : "Utopia Deals",
+                    "duration" : "Jan 2024 - Dec 2024",
+                    "skills" : [],
+                    "points" : [
+                        "Developed scalable backend APIs with Spring Boot.",
+                        "Deployed microservices on AWS cloud environment.",
+                        "Collaborated with cross-functional teams and stakeholders.",
+                        "Led development of real-time analytics dashboards."
+                    ]
+                },
+                {
+                    "img-url" : "https://media.licdn.com/dms/image/v2/C4D0BAQFVK71jsqTAeQ/company-logo_200_200/company-logo_200_200/0/1673575492245?e=1756339200&v=beta&t=5Z5hhkHhlk3jWlmcPBBC2sV3BGuhzb2bNp3dwQdyprw",
+                    "position" : "Assistant Manager - SWE",
+                    "company" : "Utopia Deals",
+                    "duration" : "Jan 2022 - Dec 2023",
+                    "skills" : [],
+                    "points" : [
+                        "Developed scalable backend APIs with Spring Boot.",
+                        "Deployed microservices on AWS cloud environment.",
+                        "Collaborated with cross-functional teams and stakeholders.",
+                        "Led development of real-time analytics dashboards."
+                    ]
+                }
+            ]
         }
     }
 }
