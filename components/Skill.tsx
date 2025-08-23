@@ -2,21 +2,23 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 type Props = {
-    directionLeft?: boolean
+    directionLeft?: boolean,
+    skill: string,
+    baseUrl : string
 }
 
-function Skill({ directionLeft }: Props) {
+function Skill({ directionLeft , skill, baseUrl }: Props) {
     return (
-        <div className='group relative flex cursor-pointer'>
+        <div className='group relative flex cursor-pointer h-30 w-30'>
             <motion.img
-            className='bg-white'
+            className='bg-[#292929] p-3 rounded-3xl'
                 initial={{
                     x: directionLeft ? -200 : 200,
-                    opacity: 0
+                    opacity: -10
                 }}
                 transition={{ duration: 1 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                src={'https://portfolio-tech-icons.s3.us-east-1.amazonaws.com/JavaScript.png'}
+                src={baseUrl + skill }
 >
             </motion.img>
             <p></p>

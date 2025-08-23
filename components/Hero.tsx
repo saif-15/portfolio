@@ -9,8 +9,8 @@ export default function Hero({ }: Props) {
 
     const [profession, counter] = useTypewriter({
         words: data.body.hero.profession,
-       loop: true,
-       delaySpeed: 2000
+        loop: true,
+        delaySpeed: 2000
     }) 
 
     const [text, count] = useTypewriter({
@@ -22,7 +22,7 @@ export default function Hero({ }: Props) {
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
             <img className='relative rounded-full h-32 w-32 mx-auto object-cover'
-                src={data.body.hero.image} alt=''></img>
+                src={data.utility['static-file-base-url'] + data.body.hero.image} alt=''></img>
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[12px]'><span>{profession}</span></h2>
                 <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-2'>

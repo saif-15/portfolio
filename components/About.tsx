@@ -24,7 +24,7 @@ function About({ }: Props) {
                 }}
                 viewport={{ once: true }}
                 whileInView={{ opacity: 1.0, x: 0 }}
-                src={data.body.about['img-url']} alt=''
+                src={data.utility['static-file-base-url'] + data.body.about['img-url']} alt=''
             >
 
             </motion.img>

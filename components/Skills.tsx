@@ -1,5 +1,6 @@
 import React from 'react'
 import Skill from './Skill'
+import data from '../public/portfolio.json';
 
 type Props = {}
 
@@ -10,11 +11,13 @@ function Skills({ }: Props) {
 
             <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>Hover over the skill for current proficiency</h3>
 
-            <div className='grid grid-cols-4 gap-5'>
-
-                <Skill directionLeft={true}></Skill>
-                <Skill directionLeft={true}></Skill>
-                <Skill directionLeft={true}></Skill>
+            <div className='grid grid-cols-8 gap-5 m-50'>
+                {Object.entries(data.body.skills).map(([key, value], index) => (
+                    <Skill key={index} 
+                    skill={value}
+                    directionLeft={ index > Object.entries(data.body.skills).length / 2 }
+                    baseUrl={data.utility['static-file-base-url']} />
+                ))}
 
             </div>
         </div>

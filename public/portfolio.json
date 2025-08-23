@@ -1,4 +1,7 @@
 {
+    "utility" :{
+        "static-file-base-url" : "https://d2o1zafinhvy3x.cloudfront.net/"
+    },
     "header" : {
         "linkedinLink" : "https://www.linkedin.com/in/saif-ul-haq-063a0a193/",
         "facebookLink" : "https://www.facebook.com/shady.saif15",
@@ -6,7 +9,7 @@
     },
     "body" :{
         "hero":{
-            "image" : "https://portfolio-tech-icons.s3.us-east-1.amazonaws.com/profile-1.png",
+            "image" : "profile-1.png",
             "profession" : [
                     "Software Engineer",
                     "Devops Aspirant",
@@ -23,13 +26,13 @@
             ]
         },
         "about" : {
-            "img-url" : "https://media.licdn.com/dms/image/v2/D4D03AQEUaeE5Ds_1mw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1691240623556?e=1755734400&v=beta&t=Xm5vj36zxpgfEcj02R2Ulm5JoK26IIk3N4inTcHI13k",
+            "img-url" : "main-profile-image.jpeg",
             "description" : "Skilled in Java, JavaScript, DSA and web development with a Bachelor of Computer Science from Umaer Basha Institute of Technology (UBIT) and currently persuing Masters in Data Science from National University of Computing and Emerging Sciences (FAST). I am a motivated engineer utilizing Java and Spring Boot to built a customer friendly solutions with the goal of establishing myself in the technical field.I've always had a creative streak, therefore I'm looking forward to use technical expertise to create with the realm of currently existing technologies.According to me, Software engineering is a fascinating blend of creativity and logic, where we craft solutions that shape the digital world"
         },
         "experience":{
             "list" : [
                 {
-                    "img-url" : "https://media.licdn.com/dms/image/v2/C4D0BAQFVK71jsqTAeQ/company-logo_200_200/company-logo_200_200/0/1673575492245?e=1756339200&v=beta&t=5Z5hhkHhlk3jWlmcPBBC2sV3BGuhzb2bNp3dwQdyprw",
+                    "img-url" : "utopia-logo.jpeg",
                     "position" : "Manager - SWE",
                     "company" : "Utopia Deals",
                     "duration" : "Jan 2025 - till Date",
@@ -42,7 +45,7 @@
                     ]
                 },
                 {
-                    "img-url" : "https://media.licdn.com/dms/image/v2/C4D0BAQFVK71jsqTAeQ/company-logo_200_200/company-logo_200_200/0/1673575492245?e=1756339200&v=beta&t=5Z5hhkHhlk3jWlmcPBBC2sV3BGuhzb2bNp3dwQdyprw",
+                    "img-url" : "utopia-logo.jpeg",
                     "position" : "Deputy Manager - SWE",
                     "company" : "Utopia Deals",
                     "duration" : "Jan 2024 - Dec 2024",
@@ -55,7 +58,7 @@
                     ]
                 },
                 {
-                    "img-url" : "https://media.licdn.com/dms/image/v2/C4D0BAQFVK71jsqTAeQ/company-logo_200_200/company-logo_200_200/0/1673575492245?e=1756339200&v=beta&t=5Z5hhkHhlk3jWlmcPBBC2sV3BGuhzb2bNp3dwQdyprw",
+                    "img-url" : "utopia-logo.jpeg",
                     "position" : "Assistant Manager - SWE",
                     "company" : "Utopia Deals",
                     "duration" : "Jan 2022 - Dec 2023",
@@ -68,6 +71,39 @@
                     ]
                 }
             ]
+        },
+        "skills" :  {
+            "ansible" : "Ansible.png",
+            "maven" : "Apache Maven.png",
+            "argoCd" : "Argo CD.png",
+            "aws" : "AWS.png",
+            "sql" : "Azure SQL Database.png",
+            "bash" : "Bash.png",
+            "docker" : "Docker.png",
+            "git" : "Git.png",
+            "github_actions" : "GitHub Actions.png",
+            "gitlab" : "GitLab.png",
+            "grafana" : "Grafana.png",
+            "terraform" : "HashiCorp Terraform.png",
+            "vault": "HashiCorp Vault.png",
+            "helm" : "Helm.png",
+            "hibernate" : "Hibernate.png",
+            "html" : "HTML5.png",
+            "java" : "Java.png",
+            "javascript" : "JavaScript.png",
+            "jenkins" : "Jenkins.png",
+            "jquery" : "jQuery.png",
+            "json" : "JSON.png",
+            "kubernetes" : "Kubernetes.png",
+            "linux" : "Linux.png",
+            "mysql" : "MySQL.png",
+            "nodejs" : "Node.js.png",
+            "prometheus" : "Prometheus.png",
+            "python" : "Python.png",
+            "react" : "React.png",
+            "sonarqube" : "SonarQube.png",
+            "spring" : "Spring.png",
+            "vue" : "Vue.js.png"
         }
     }
 }

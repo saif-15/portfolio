@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { FaAws, FaJava } from 'react-icons/fa'
 import { SiSpring } from 'react-icons/si'
 
-type Props = { exp : any}
+type Props = { exp : any, baseUrl : String}
 
-function ExperienceCard({ exp }: Props) {
+function ExperienceCard({ exp, baseUrl }: Props) {
     return (
         <article
             className='flex flex-col rounded-lg items-center space-y-6 sm:space-y-7 flex-shrink-0 w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] xl:max-w-[600px] snap-center p-6 sm:p-8 md:p-10 bg-[#292929] hover:opacity-100 opacity-75 cursor-pointer transition-opacity duration-200 overflow-hidden shadow-lg'
@@ -16,7 +16,7 @@ function ExperienceCard({ exp }: Props) {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 className='w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 xl:w-[150px] xl:h-[150px] rounded-full object-cover object-center'
-                src={exp['img-url']}
+                src={ baseUrl + exp['img-url']}
                 alt='Company Logo'
             />
 

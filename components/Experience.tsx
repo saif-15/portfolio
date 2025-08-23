@@ -15,7 +15,7 @@ function Experience({ }: Props) {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'></h3>
             <div className='w-full flex space-x-5 overflow-scroll p-10 snap-x snap-mandatory'>
                 {data.body.experience.list.map((item, index) => (
-                   <ExperienceCard key={index} exp={item} />
+                   <ExperienceCard key={index} exp={item} baseUrl={data.utility['static-file-base-url']} />
                 ))}
                 
             </div>
