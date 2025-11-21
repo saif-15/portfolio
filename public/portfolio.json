@@ -11,6 +11,7 @@
         "hero":{
             "image" : "profile-1.png",
             "profession" : [
+                    "",
                     "Software Engineer",
                     "Devops Aspirant",
                     "Cloud Enthusiast"
