@@ -1,49 +1,52 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { FaAws, FaJava } from 'react-icons/fa'
-import { SiSpring } from 'react-icons/si'
+import React from "react";
+import { FaAws, FaJava } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { motion } from "framer-motion"
 
-type Props = { exp : any, baseUrl : String}
+type Props = {
+    exp: any;
+    baseUrl: string;
+};
 
 function ExperienceCard({ exp, baseUrl }: Props) {
     return (
-        <article
-            className='flex flex-col rounded-lg items-center space-y-6 sm:space-y-7 flex-shrink-0 w-full max-w-[90%] sm:max-w-[400px] md:max-w-[500px] xl:max-w-[600px] snap-center p-6 sm:p-8 md:p-10 bg-[#292929] hover:opacity-100 opacity-75 cursor-pointer transition-opacity duration-200 overflow-hidden shadow-lg'
-        >
+        <article className="flex flex-col items-center w-full rounded-2xl bg-[#292929] p-5 sm:p-6 md:p-7 shadow-lg transition-transform duration-300 cursor-pointer">
+            {/* Company Logo */}
             <motion.img
-                initial={{ y: -100, opacity: 0 }}
-                transition={{ duration: 1.2 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                className='w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 xl:w-[150px] xl:h-[150px] rounded-full object-cover object-center'
-                src={ baseUrl + exp['img-url']}
-                alt='Company Logo'
-            />
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: false }}
+                src={baseUrl + exp["img-url"]}
+                alt={exp.company}
+                className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover mb-4"
+            >
+            </motion.img>
 
-            <div className='px-2 sm:px-4 md:px-6 text-center sm:text-left w-full'>
-                <h4 className='text-2xl sm:text-3xl font-light'>{exp.position}</h4>
-                <p className='font-bold text-lg sm:text-xl mt-1'>{exp.company}</p>
+            {/* Content */}
+            <div className="w-full text-center sm:text-left space-y-2">
+                <h4 className="text-lg sm:text-xl font-light">{exp.position}</h4>
+                <p className="font-semibold text-base sm:text-lg">{exp.company}</p>
 
-                <div className='flex justify-center sm:justify-start space-x-3 my-3'>
-                    <FaAws className='rounded-2xl h-10 w-10 bg-amber-400 p-1 text-[#161D26]' />
-                    <FaJava className='rounded-2xl h-10 w-10 bg-white p-1 text-[#FF0000]' />
-                    <SiSpring className='rounded-2xl h-10 w-10 bg-white p-1 text-[#2bff00]' />
+                {/* Tech Icons */}
+                <div className="flex justify-center sm:justify-start gap-3 my-2">
+                    <FaAws className="h-8 w-8 rounded-xl bg-amber-400 p-1 text-[#161D26]" />
+                    <FaJava className="h-8 w-8 rounded-xl bg-white p-1 text-red-600" />
+                    <SiSpring className="h-8 w-8 rounded-xl bg-white p-1 text-green-500" />
                 </div>
 
-                <p className='uppercase py-3 text-gray-300 text-sm sm:text-base'>
-                    {exp.duration}
-                </p>
+                <p className="uppercase text-gray-400 text-xs sm:text-sm py-1">{exp.duration}</p>
 
-                <ul className='list-disc list-inside space-y-2 text-left text-sm sm:text-base leading-relaxed text-gray-200'>
-                    
-                {exp.points.map((pt : String, index : any) => (
-                      <li key={index}>{pt}</li>
-                ))}
-
+                {/* Bullet Points */}
+                <ul className="list-disc list-inside space-y-1 text-left text-sm text-gray-200">
+                    {exp.points.map((pt: string, idx: number) => (
+                        <li key={idx}>{pt}</li>
+                    ))}
                 </ul>
             </div>
+
         </article>
-    )
+    );
 }
 
-export default ExperienceCard
+export default ExperienceCard;

@@ -105,6 +105,20 @@
             "sonarqube" : "SonarQube.png",
             "spring" : "Spring.png",
             "vue" : "Vue.js.png"
-        }
+        },
+        "certifications" : [
+            {
+                "title" : "AWS Certified Developer – Associate",
+                "link" : "https://www.credly.com/badges/bd6c4029-38a2-4613-b704-d3cb6700ad33",
+                "expiry" : "Expires: November 30, 2028",
+                "icon" : "dva.png"
+            },
+            {
+                "title" : "AWS Certified Solutions Architect – Associate",
+                "link" : "https://www.credly.com/badges/12228c25-c64d-46ce-8a31-bf1dbb77b80f",
+                "expiry" : "Expires Jun 23, 2027",
+                "icon" : "saa.png"
+            }
+        ]
     }
 }
