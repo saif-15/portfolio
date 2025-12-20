@@ -14,33 +14,33 @@ function Skill({ directionLeft = false, skill, baseUrl }: Props) {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false }}
-      className="
-        group
-        relative
-        flex
-        flex-col
-        items-center
-        justify-center
-        w-full
-        min-w-[120px]
-        sm:min-w-[140px]
-        md:min-w-[160px]
-        lg:min-w-[180px]
-        rounded-2xl
-        bg-[#1f1f1f]
-        p-5
-        sm:p-6
-        md:p-7
-        shadow-lg
-        transition-all
-        duration-300
-        hover:scale-[1.0]
-        hover:shadow-2xl
-        cursor-pointer
-      "
+      className="group
+          relative
+          flex
+          flex-col
+          items-center
+          w-full
+          max-w-md
+          sm:max-w-lg
+          md:max-w-xl
+          lg:max-w-2xl
+          rounded-2xl
+          bg-[#1f1f1f]
+          p-3
+          sm:p-8
+          md:p-10
+          shadow-xl
+          transition-all
+          duration-400
+          hover:scale-[1.20]
+          hover:z-10
+          hover:shadow-2xl
+          opacity-90
+          hover:opacity-100
+          overflow-hidden"
     >
       {/* Glow (same as certification) */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-black-500/5 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       {/* Skill Image */}
       <img

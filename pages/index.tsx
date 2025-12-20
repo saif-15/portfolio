@@ -7,6 +7,7 @@ import Experience from '../components/Experience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Certification from '../components/Certification'
+import Education from '../components/Education'
 
 
 const Home: NextPage = () => {
@@ -27,6 +28,10 @@ const Home: NextPage = () => {
       <section id="about" className='snap-center'>
         <About />
       </section>
+      { /* Education */}
+      <section id="education" className='snap-center'>
+        <Education />
+      </section>
 
       { /* Expereince */}
       <section id="experience" className='snap-center'>
@@ -37,14 +42,13 @@ const Home: NextPage = () => {
       <section id="skills" className='snap-start'>
         <Skills/>
       </section>
-
+      {/* Certifications  */}
+      <section id="certifications" className='snap-center'>
+        <Certification/>
+      </section>
       { /* Projects */}
       <section id='projects' className='snap-center'>
         <Projects/>
-      </section>
-
-      <section id="certifications" className='snap-center'>
-        <Certification/>
       </section>
 
       { /* Contact Me */}

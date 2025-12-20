@@ -30,6 +30,22 @@
             "img-url" : "main-profile-image.jpeg",
             "description" : "Skilled in Java, JavaScript, DSA and web development with a Bachelor of Computer Science from Umaer Basha Institute of Technology (UBIT) and currently persuing Masters in Data Science from National University of Computing and Emerging Sciences (FAST). I am a motivated engineer utilizing Java and Spring Boot to built a customer friendly solutions with the goal of establishing myself in the technical field.I've always had a creative streak, therefore I'm looking forward to use technical expertise to create with the realm of currently existing technologies.According to me, Software engineering is a fascinating blend of creativity and logic, where we craft solutions that shape the digital world"
         },
+        "education" : {
+            "list" : [
+                {
+                    "img-url" : "fast-logo.png",
+                    "qualification" : "Master of Science - MS, Data Science",
+                    "institite" : "National University of Computer and Emerging Sciences",
+                    "duration": "Jul 2024 - till Date"
+                },
+                {
+                    "img-url" : "ku-logo.png",
+                    "qualification" : "Bachelor of Science - BS, Computer Science",
+                    "institite" : "University of Karachi UBIT",
+                    "duration": "Jan 2018 - Dec 2021"
+                }
+            ]
+        },
         "experience":{
             "list" : [
                 {

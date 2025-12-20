@@ -10,11 +10,38 @@ type Props = {
 
 function ExperienceCard({ exp, baseUrl }: Props) {
     return (
-        <article className="flex flex-col items-center w-full rounded-2xl bg-[#292929] p-5 sm:p-6 md:p-7 shadow-lg transition-transform duration-300 cursor-pointer">
+        <article className="group
+          relative
+          flex
+          flex-col
+          items-center
+          w-full
+          max-w-md
+          sm:max-w-lg
+          md:max-w-xl
+          lg:max-w-2xl
+          mx-auto
+          rounded-2xl
+          bg-[#1f1f1f]
+          p-6
+          sm:p-8
+          md:p-10
+          shadow-xl
+          transition-all
+          duration-400
+          hover:scale-[1.20]
+          hover:z-10
+          hover:shadow-2xl
+          opacity-90
+          hover:opacity-100
+          overflow-hidden">
+             {/* subtle hover glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-black-500/5 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
             {/* Company Logo */}
             <motion.img
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -80 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 viewport={{ once: false }}
                 src={baseUrl + exp["img-url"]}

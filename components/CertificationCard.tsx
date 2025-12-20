@@ -42,8 +42,9 @@ function CertificationCard({
           md:p-10
           shadow-xl
           transition-all
-          duration-300
-          hover:scale-[1.02]
+          duration-400
+          hover:z-10
+          hover:scale-[1.20]
           hover:shadow-2xl
           opacity-90
           hover:opacity-100
@@ -51,17 +52,17 @@ function CertificationCard({
         "
             >
                 {/* subtle hover glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-black-500/5 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Image (NO border / NO background) */}
                 <motion.img
                     src={baseUrl + certification.icon}
                     alt={certification.title}
                     initial={{
-                        x: directionLeft ? -120 : 120,
+                        y: - 120,
                         opacity: 0,
                     }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: false }}
                     className="
@@ -77,7 +78,6 @@ function CertificationCard({
             mb-6
           "
                 />
-
                 {/* Content */}
                 <div className="relative z-10 text-center space-y-2">
                     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">
