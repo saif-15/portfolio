@@ -5,3 +5,26 @@
         @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-[#df5e22]/40 hover:text-[#ffffff]/40
     }
 }
+
+/* ===== Scrollbar Styling ===== */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(24, 24, 24); /* dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F97316; /* ORANGE thumb */
+  border-radius: 5px;
+}
+
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #F97316 rgb(24, 24, 24);
+}
