@@ -122,6 +122,32 @@
             "spring" : "Spring.png",
             "vue" : "Vue.js.png"
         },
+        "projects" : [
+            {
+                "title" : "Real-Time Analytics Dashboard",
+                "description" : "Streaming analytics platform built with Spring Boot, Kafka, and React. Handles 10K+ events per second with sub-second latency.",
+                "tech" : ["Spring Boot", "Kafka", "React", "AWS"],
+                "color" : "#F97316"
+            },
+            {
+                "title" : "Microservices on Kubernetes",
+                "description" : "Migrated monolith to microservices architecture deployed on EKS with GitOps via ArgoCD. Reduced deployment time by 80%.",
+                "tech" : ["Kubernetes", "ArgoCD", "Helm", "Terraform"],
+                "color" : "#3b82f6"
+            },
+            {
+                "title" : "Cloud-Native E-Commerce",
+                "description" : "Full-stack e-commerce solution with Spring Boot backend and Vue.js frontend deployed on AWS with CI/CD pipelines.",
+                "tech" : ["Spring Boot", "Vue.js", "AWS", "Jenkins"],
+                "color" : "#a855f7"
+            },
+            {
+                "title" : "Observability Stack",
+                "description" : "End-to-end observability using Prometheus, Grafana, and custom dashboards for monitoring production microservices at scale.",
+                "tech" : ["Prometheus", "Grafana", "Docker", "Bash"],
+                "color" : "#22d3ee"
+            }
+        ],
         "certifications" : [
             {
                 "title" : "AWS Certified Developer – Associate",

@@ -8,62 +8,54 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Certification from '../components/Certification'
 import Education from '../components/Education'
-
+import SceneBackground from '../components/three/SceneBackgroundClient'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(36,36,36)]
-  text-white
-  h-screen
-  snap-y snap-mandatory
-  z-0
-  overflow-y-scroll
-  overflow-x-hidden
-  scrollbar-thin
-  scrollbar-track-gray-800
-  scrollbar-thumb-[#F7AB0A]/80">
+    <>
       <Head>
         <title>Saif Portfolio</title>
+        <meta name="description" content="Interactive 3D portfolio of Saif Ul Haq — Software Engineer & Cloud Enthusiast" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </Head>
 
-      { /* Header */}
-      <Header />
+      <SceneBackground />
 
-      { /* Hero */}
-      <section id="hero" className='snap-start'>
-        <Hero />
-      </section>
-      { /* About */}
-      <section id="about" className='snap-center'>
-        <About />
-      </section>
-      { /* Education */}
-      <section id="education" className='snap-center'>
-        <Education />
-      </section>
+      <div
+        id="scroll-root"
+        className="text-white h-[100dvh] snap-none md:snap-y md:snap-proximity lg:snap-mandatory z-0 overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-[#F7AB0A]/80 relative"
+      >
+        <Header />
 
-      { /* Expereince */}
-      <section id="experience" className='snap-center'>
-        <Experience/>
-      </section>
+        <section id="hero" className='md:snap-start relative'>
+          <Hero />
+        </section>
 
-      { /* Skills */}
-      <section id="skills" className='snap-start'>
-        <Skills/>
-      </section>
-      {/* Certifications  */}
-      <section id="certifications" className='snap-center'>
-        <Certification/>
-      </section>
-      { /* Projects */}
-      <section id='projects' className='snap-center'>
-        <Projects/>
-      </section>
+        <section id="about" className='md:snap-center relative'>
+          <About />
+        </section>
 
-      { /* Contact Me */}
+        <section id="education" className='md:snap-center relative'>
+          <Education />
+        </section>
 
+        <section id="experience" className='md:snap-center relative'>
+          <Experience />
+        </section>
 
-    </div>
+        <section id="skills" className='md:snap-start relative'>
+          <Skills />
+        </section>
+
+        <section id="certifications" className='md:snap-center relative'>
+          <Certification />
+        </section>
+
+        <section id='projects' className='md:snap-center relative'>
+          <Projects />
+        </section>
+      </div>
+    </>
   )
 }
 
